@@ -1,10 +1,8 @@
 import './App.css'
 import "tailwindcss";
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
-import Tareas from '../src/pages/TareasServidor/Tarea.jsx';
-// import EditarTarea from './pages/editarTarea'
- import Miamor from './pages/Miamor';
-// import CrearTarea from './pages/crearTarea';
+import Tareas from './pages/TareasServidor/Tarea.jsx'// import EditarTarea from './pages/editarTarea'
+import Miamor from './pages/Miamor.jsx'// import CrearTarea from './pages/crearTarea';
 function App() {
     return (
       <>
