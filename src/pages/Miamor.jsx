@@ -4,7 +4,7 @@ function Miamor() {
    <>
    <div>
    <h1>Te amooooo mucho mi amor hermosa preciosa</h1>
-   <img src="../../public/imagenes/negrahermosa.jpg" alt="" width="100%;" />
+   <img src="./imagenes" alt="" width="100%;" />
    </div>
    </>
   )
