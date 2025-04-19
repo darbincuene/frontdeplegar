@@ -12,7 +12,7 @@ function App() {
         <Routes>
           {/* <Route path='=/tarea'element={<Tarea/>}></Route> */}
           
-          <Route path='/tareas' element={<Tareas/>}></Route>
+          <Route path='/darbin' element={<Tareas/>}></Route>
           <Route path='/' element={<Miamor/>}></Route>
 
            {/*<Route path='/editar/tarea/:id' element={<EditarTarea/>}></Route>
