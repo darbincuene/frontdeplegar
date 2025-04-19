@@ -1,8 +1,12 @@
 import React from 'react'
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
+import '../css/paginaprincipal.css';
+
 import { useEffect, useState } from 'react';
 
 function Miamor() {
+  const navigate = useNavigate();
 
   const [datos, setData] = useState([]);
 
@@ -20,21 +24,23 @@ function Miamor() {
   return (
 
       <>
-      <div className="py-8 px-8">
-        <h1 className="text-center py-8 font-mono text-6xl">Tareas </h1>
+      <div className="divmayor">
 
+        <h1 className=" titulo">Tareas </h1>
 
-        <div className="grid grid-cols-3 gap-4">
+        <button onClick={()=>navigate("/darbin")} >vamos a otra pagina</button>
+
+        <div className="contenedorcards">
           {datos.map((tarea) => (
-            <div key={tarea.id} className="bg-amber-950 px-8 py-8 rounded-3xl">
-              <h2 className="text-center px-4 py-4 text-white">{tarea.titulo}</h2>
-              <p className="text-center px-4 py-4 text-white">
+            <div key={tarea.id} className="card">
+              <h2 className="">{tarea.titulo}</h2>
+              <p className="">
                 {tarea.descripcion ?? "Sin descripción"}
               </p>
-              <p className="text-center px-4 py-4 text-white">
+              <p className="">
                 {tarea.completada ? "Completada" : "Pendiente"}
               </p>
-              <p className="text-center px-4 py-4 text-white">{tarea.fechaCreacion}</p>
+              <p className="">{tarea.fechaCreacion}</p>
             </div>
           ))}
         </div>

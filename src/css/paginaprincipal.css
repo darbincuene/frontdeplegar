@@ -1,0 +1,49 @@
+.divmayor{
+    display: grid;
+    place-items: center;
+    background-color: #333333;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.titulo{
+    margin: 50px;
+    padding: 30px;
+
+
+}
+.contenedorcards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card{
+    height: auto;
+    width: 480px;
+    background-color:rgb(32, 32, 77);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+button{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px ;
+    text-align: center;
+    text-decoration: solid;
+    /* display: inline-block; */
+    font-size: 16px;
+    /* margin: 4px 2px; */
+    cursor: pointer;
+    border-radius: 5px;
+}
