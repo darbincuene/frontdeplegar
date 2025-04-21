@@ -11,7 +11,7 @@ function App() {
        <Router>
         <Routes>
           
-          <Route path='/craer/tarea' element={<Tarea/>}></Route>
+          <Route path='/crear/tarea' element={<Tarea/>}></Route>
           <Route path='/' element={<TodasTareas/>}></Route>
 
            {/*<Route path='/editar/tarea/:id' element={<EditarTarea/>}></Route>
