@@ -29,6 +29,9 @@ function Miamor() {
         <h1 className=" titulo">Tareas </h1>
 
         <button onClick={()=>navigate("/darbin")} >vamos a otra pagina</button>
+        
+        <button onClick={()=>navigate("/craer/tarea")} >Crear Tarea</button>
+
 
         <div className="contenedorcards">
           {datos.map((tarea) => (

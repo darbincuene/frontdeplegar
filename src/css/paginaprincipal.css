@@ -1,9 +1,10 @@
 .divmayor{
     display: grid;
     place-items: center;
+    grid-template-columns: column;
     color: #fff;
   
-    font-size: 1.24rm;
+    font-size: 1.24rem;
     font-weight: bold;
     text-align: center;
 }
@@ -13,22 +14,24 @@ body{
 
 }
 .titulo {
-    margin: 2em;
+    /* margin: 2em; */
     padding: 1.5em;
     font-size: 2em;
 }
 
-.contenedorcards{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+.contenedorcards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    justify-items: center;
 }
 
+
 .card{
-    /* height: auto;
-    width: auto; */
+    
     background-color:rgb(32, 32, 77);
     border-radius: 10px;
     padding: 20px;
@@ -39,7 +42,7 @@ body{
     gap: 20px;
     width: 300px;
     max-width: 90%;
-    flex: 1 1 250px;
+    /* flex: 1 1 250px; */
 }
 button{
     background-color: #4CAF50; /* Green */
@@ -54,4 +57,10 @@ button{
     cursor: pointer;
     border-radius: 5px;
 }
-
+/* 
+@media (min-width: 1024px) {
+    .contenedorcards {
+      grid-template-columns: repeat(4, 1fr); 
+    }
+  } */
+  

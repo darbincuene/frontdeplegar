@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import axios from 'axios';
 
-function CrearTarea() {
+function CrearTara() {
   const navigate = useNavigate();
 
   const [titulo,setTitulo]=useState('');
@@ -39,30 +39,6 @@ function CrearTarea() {
       <div className='grid place-items-center m-18 min-h-screen'>
         <div className=' p-4 flex justify-center shadow-md  rounded-md w-full max-w-xl'>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
           <form action="" onSubmit={enviarDatos} className='flex flex-col gap-8'>
             <label htmlFor="">Titulo</label>
             <input value={titulo} onChange={(e)=>setTitulo(e.target.value)} type="text" className='border rounded p-2  w-full mb-2 color-black' />
@@ -83,4 +59,4 @@ function CrearTarea() {
   )
 }
 
-export default CrearTarea
+export default CrearTara
