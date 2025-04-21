@@ -1,18 +1,23 @@
 .divmayor{
     display: grid;
     place-items: center;
-    background-color: #333333;
     color: #fff;
-    font-size: 20px;
+  
+    font-size: 1.24rm;
     font-weight: bold;
     text-align: center;
 }
-.titulo{
-    margin: 50px;
-    padding: 30px;
+body{
+    background-color: #333333;
 
 
 }
+.titulo {
+    margin: 2em;
+    padding: 1.5em;
+    font-size: 2em;
+}
+
 .contenedorcards{
     display: flex;
     align-items: center;
@@ -22,8 +27,8 @@
 }
 
 .card{
-    height: auto;
-    width: 480px;
+    /* height: auto;
+    width: auto; */
     background-color:rgb(32, 32, 77);
     border-radius: 10px;
     padding: 20px;
@@ -32,18 +37,21 @@
     justify-content: center;
     flex-direction: column;
     gap: 20px;
-    
+    width: 300px;
+    max-width: 90%;
+    flex: 1 1 250px;
 }
 button{
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
-    padding: 15px ;
+    padding: 1em ;
     text-align: center;
     text-decoration: solid;
     /* display: inline-block; */
-    font-size: 16px;
+    font-size: 1rem;
     /* margin: 4px 2px; */
     cursor: pointer;
     border-radius: 5px;
 }
+
