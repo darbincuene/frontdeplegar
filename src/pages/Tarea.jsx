@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import "../css/paginaprincipal.css";
 
 import { useEffect, useState } from "react";
+import ActualizarTarea from "./TareasServidor/ActualizarTarea";
 
 function Miamor() {
   const navigate = useNavigate();
@@ -25,7 +26,7 @@ function Miamor() {
       .get("https://express-2obu.onrender.com/tareas")
       .then((response) => {
         setData(response.data);
-        console.log(response.data);
+        // console.log(response.data);
       })
       .catch((error) => {
         console.error("error al obtener los datos :", error);
@@ -48,6 +49,7 @@ function Miamor() {
               </p>
               <p className="">{tarea.fechaCreacion}</p>
               <button onClick={() => eliminarTarea(tarea._id)}>Eliminar</button>
+              <button onClick={()=> navigate(`/editar/tarea/${tarea._id}`)}>Actualizar</button>
             </div>
           ))}
         </div>
