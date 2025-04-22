@@ -36,7 +36,7 @@ function Miamor() {
     <>
       <div className="divmayor">
         <h1 className=" titulo">Tareas </h1>
-        <button onClick={() => navigate("/craer/tarea")}>Crear Tarea</button>
+        <button onClick={() => navigate("/crear/tarea")}>Crear Tarea</button>
 
         <div className="contenedorcards">
           {datos.map((tarea) => (
